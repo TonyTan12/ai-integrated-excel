@@ -1,4 +1,4 @@
-# Tony's Excel AI Assistant
+#AI Integrated into Excel
 
 An AI-powered Excel add-in that helps with formulas, data cleaning, and analysis using OpenAI GPT-4.
 
@@ -32,10 +32,6 @@ An AI-powered Excel add-in that helps with formulas, data cleaning, and analysis
 3. Go to Insert → Add-ins → Upload My Add-in
 4. Select `manifest.xml`
 5. The AI Assistant tab will appear
-
-### Method 2: AppSource (Coming Soon)
-- Search "Tony's Excel AI Assistant" in Office Store
-- One-click install
 
 ## Setup
 
@@ -93,9 +89,7 @@ An AI-powered Excel add-in that helps with formulas, data cleaning, and analysis
 
 ## Author
 
-**Tony Tan**
-- Tax Technology & Transformation at EY
-- Product Manager & AI Developer
+**Tony Tan**- 
 - [LinkedIn](https://www.linkedin.com/in/tonytan3/)
 - [GitHub](https://github.com/TonyTan12)
 
