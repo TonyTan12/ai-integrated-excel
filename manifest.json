@@ -1,0 +1,89 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/office-js-manifest-schema/manifest.schema.json",
+  "manifestVersion": "1.17",
+  "version": "1.0.0",
+  "id": "tony-excel-ai-assistant",
+  "locale": "en-us",
+  "displayName": {
+    "default": "Tony's Excel AI Assistant"
+  },
+  "description": {
+    "default": "AI-powered Excel assistant for formulas, data cleaning, and analysis"
+  },
+  "icon": {
+    "size": 32,
+    "fileName": "icon-32.png",
+    "default": "https://localhost:3000/assets/icon-32.png"
+  },
+  "highResolutionIcon": {
+    "size": 64,
+    "fileName": "icon-64.png",
+    "default": "https://localhost:3000/assets/icon-64.png"
+  },
+  "supportUrl": "https://github.com/TonyTan12/excel-ai-assistant",
+  "hosts": [
+    {
+      "host": "Excel",
+      "default": true
+    }
+  ],
+  "requirements": {
+    "scopes": [
+      " workbook"
+    ]
+  },
+  "permissions": [
+    "read/write document"
+  ],
+  "runtime": {
+    "type": "general",
+    "code": {
+      "page": "https://localhost:3000/taskpane.html"
+    },
+    "lifetime": "short"
+  },
+  "ribbons": [
+    {
+      "type": "Excel",
+      "tabs": [
+        {
+          "id": "TonyAI",
+          "label": "AI Assistant",
+          "groups": [
+            {
+              "id": "AICommands",
+              "label": "AI Tools",
+              "icons": [
+                {
+                  "size": 32,
+                  "fileName": "icon-32.png"
+                }
+              ],
+              "controls": [
+                {
+                  "id": "OpenAIAssistant",
+                  "type": "button",
+                  "label": "Open AI Assistant",
+                  "icons": [
+                    {
+                      "size": 32,
+                      "fileName": "icon-32.png"
+                    }
+                  ],
+                  "supertip": {
+                    "title": "Tony's Excel AI Assistant",
+                    "description": "Generate formulas, clean data, and analyze with AI"
+                  },
+                  "action": {
+                    "type": "showTaskPane",
+                    "sourceLocation": "https://localhost:3000/taskpane.html"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
